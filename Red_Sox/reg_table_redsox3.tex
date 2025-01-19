@@ -1,0 +1,49 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{2}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}\\
+                    &\multicolumn{1}{c}{price\_per\_ticket}&\multicolumn{1}{c}{price\_per\_ticket}\\
+\hline
+days\_from\_transaction\_until\_game&       0.268\sym{***}&       0.074\sym{***}\\
+                    &     (0.003)         &     (0.006)         \\
+[1em]
+weekend\_game        &      22.500\sym{***}&      22.346\sym{***}\\
+                    &     (0.245)         &     (0.245)         \\
+[1em]
+day\_game            &      10.777\sym{***}&      11.505\sym{***}\\
+                    &     (0.267)         &     (0.267)         \\
+[1em]
+year=2009           &       0.000         &       0.000         \\
+                    &         (.)         &         (.)         \\
+[1em]
+year=2010           &     -11.115\sym{***}&     -17.760\sym{***}\\
+                    &     (0.338)         &     (0.437)         \\
+[1em]
+year=2011           &      -2.806\sym{***}&     -10.206\sym{***}\\
+                    &     (0.321)         &     (0.410)         \\
+[1em]
+year=2012           &     -16.091\sym{***}&     -31.951\sym{***}\\
+                    &     (0.383)         &     (0.503)         \\
+[1em]
+year=2009 $\times$ days\_from\_transaction\_until\_game&                     &       0.000         \\
+                    &                     &         (.)         \\
+[1em]
+year=2010 $\times$ days\_from\_transaction\_until\_game&                     &       0.183\sym{***}\\
+                    &                     &     (0.008)         \\
+[1em]
+year=2011 $\times$ days\_from\_transaction\_until\_game&                     &       0.207\sym{***}\\
+                    &                     &     (0.008)         \\
+[1em]
+year=2012 $\times$ days\_from\_transaction\_until\_game&                     &       0.420\sym{***}\\
+                    &                     &     (0.009)         \\
+[1em]
+Constant            &      71.794\sym{***}&      78.692\sym{***}\\
+                    &     (0.296)         &     (0.349)         \\
+\hline
+Observations        &      452936         &      452936         \\
+\hline\hline
+\multicolumn{3}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+}
